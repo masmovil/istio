@@ -242,7 +242,7 @@ GEN_CERT := ${ISTIO_BIN}/generate_cert
 GS_BUCKET ?= istio-artifacts
 
 .PHONY: default
-default: depend build
+default: depend build test
 
 # The point of these is to allow scripts to query where artifacts
 # are stored so that tests and other consumers of the build don't

@@ -15,7 +15,7 @@ pipeline {
             steps {
                 checkout scm
                 sh '''#!/bin/bash
-                make
+                 make --no-print-directory -e -f Makefile.core.mk build-linux
 
                 '''
 
